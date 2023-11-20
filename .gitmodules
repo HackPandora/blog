@@ -1,0 +1,7 @@
+[submodule "hackpandora/themes/PaperMod"]
+	path = hackpandora/themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "hackpandora/public"]
+	path = hackpandora/public
+	url = https://github.com/HackPandora/hackpandora.github.io.git
+	branch = main

@@ -1,0 +1,148 @@
+baseURL: "https://hackpandora.github.io/"
+languageCode: es-es
+title: Hack Pandora
+theme: "PaperMod"
+
+defaultContentLanguage: es
+defaultContentLanguageInSubdir: true
+
+languages:
+    es:
+        languageName: "Spanish"
+        contentDir: content/Spanish
+
+    en:
+        languageName: "English"
+        contentDir: content/English
+
+
+
+params:
+  
+
+  env: production
+  title: Hack Pandora
+  description: "Hack Pandora, cybersecurity blog"
+  keywords: [Cybersecurity, Hacker, Blog, Hack, Pandora, OSCP, Bug, Bounty, BugBounty, Hacking]
+  author: "Luis Díaz (escipi0n)"
+  defaultTheme: dark
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: true
+  showtoc: true
+  tocopen: true
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: /apple-touch-icon.png
+    #safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Hack Pandora"
+    icon: "/apple-touch-icon.png"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: Hack Pandora
+    subtitle: "This is subtitle"
+    imageUrl: "/apple-touch-icon.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+      - name: Categories
+        url: categories
+  # home-info mode
+  homeInfoParams:
+    Title: "Opening Pandora's Box"
+    Content: "☄️ Hacking ☄️ Red Team ☄️ Web ☄️ Mobile ☄️ API ☄️ WiFi ☄️ NFC "
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/"
+    - name: linkedin
+      url: "https://linkedin.com/"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+    responsiveImages: false
+ 
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: example.org
+      url: https://example.org
+      weight: 30
+    - identifier: Search
+      name: search 🔍
+      url: search
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
